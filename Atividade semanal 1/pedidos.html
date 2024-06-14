@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedidos</title>
+    <link rel="icon" href="https://soulcode.com/assets/images/favicon.ico">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <header>
+        <h1>Pedidos</h1>
+        <a href="index.html"><button>Página Inicial</button></a>
+    </header>
+    <main>
+        <h2>Faça o seu pedido</h2>
+        <br>
+        <nav>
+            <form>
+                <label for="cNome">Nome:</label><br />
+                <input type="text" id="cNome" name="Nome" placeholder="Digite seu nome" required/>
+                <br /><br />
+
+                <label for="cCPF">Cpf:</label><br>
+                <input type="text" id="cCPF" name="Cpf" placeholder="123.456.789-00">
+                <br /><br />
+
+                <label for="cEmail">Email:</label><br />
+                <input type="email" id="cEmail" name="Email" placeholder="Digite seu email" required/>
+                <br /><br />
+
+                <label for="cTelefone">Telefone:</label><br />
+                <input type="tel" name="Telefone" id="cTelefone" placeholder="Digite seu telefone" required/>
+                <br /><br />
+
+                <label for="cEndereco">Endereço:</label><br>
+                <input type="text" id="cEndereco" name="Endereço" placeholder="Digite seu Endereço"required>
+                <br /><br />
+
+                <label for="cEscolaridade">Escolha seu produto:</label><br>
+                <select name="Escolaridade" id="cEscolaridade">
+                    <option disabled selected>Seleciona uma opção</option>
+                    <option value="">Codigo Limpo - R$ 50,00</option>
+                    <option value="">Desenvolvendo Css na Web - R$ 65,00</option>
+                    <option value="">Html para leigos - R$ 25,00</option>
+                </select>
+                <br /><br />
+
+                <p>Escolha forma de pagamento: </p>
+                <input type="radio" id="dinheiro" name="forma-de-pagamento">
+                <label for="dinheiro">Dinheiro</label>
+
+                <input type="radio" id="boleto" name="forma-de-pagamento">
+                <label for="boleto">Boleto</label>
+
+                <input type="radio" name="forma-de-pagamento" id="pix">
+                <label for="pix">Pix</label>
+
+                <input type="radio" name="forma-de-pagamento" id="credito">
+                <label for="credito">Cartão de credito</label>
+
+                <br><br>
+                <button type="submit">Enviar</button>
+                <br><br>
+            </form>
+        </nav>
+    </main>
+    <footer>
+        <hr>
+        <p>@2024. Todos direitos reservados a esta Livraria</p>
+    </footer>
+</body>
+
+</html>
